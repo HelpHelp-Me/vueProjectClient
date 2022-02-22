@@ -1,0 +1,30 @@
+$containerWidth: 900;
+$testColor: yellow;
+
+/*
+  The import order is crucial for style override.
+  "Styles declared later win."
+  We put the common visual style on top which could be overriden by the class utils
+*/
+
+/* common visual style */
+@import "./dialog.scss";
+@import "./form.scss";
+@import "./button.scss";
+
+/* class name util */
+@import "./misc.scss";
+@import "./z-index.scss";
+@import "./overflow.scss";
+@import "./position.scss";
+@import "./display.scss";
+@import "./flexbox.scss";
+@import "./sizing.scss";
+@import "./text.scss";
+@import "./spacing.scss";
+
+
+.container {
+  width: $containerWidth * 1px;
+  margin: 0 auto;
+}

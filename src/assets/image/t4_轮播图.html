@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            transform-style: preserve-3d;
+            
+        }
+        body{
+            background: #333;
+            perspective: 3000px;
+        }
+        .wrap{
+            position: relative;
+            width: 200px;
+            height: 100px;
+            margin: 300px auto;
+            transform: rotateX(-10deg);
+            transform-style: preserve-3d;
+            animation: move 5s infinite linear;
+        } 
+        .wrap div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: #333; */
+            background-size: 100% 100% !important;
+
+        }
+        .wrap div:nth-child(1){
+            background: url(img/saga0.jpg) 0 0 no-repeat;
+            transform: translateZ(300px);
+        }
+        .wrap div:nth-child(2){
+            background: url(img/saga1.jpg) 0 0 no-repeat;
+            transform: rotateY(51deg) translateZ(300px);
+        }
+        .wrap div:nth-child(3){
+            background: url(img/saga2.jpg) 0 0 no-repeat;
+            transform: rotateY(102deg) translateZ(300px);
+        }
+        .wrap div:nth-child(4){
+            background: url(img/saga3.jpg) 0 0 no-repeat;
+            transform: rotateY(153deg) translateZ(300px);
+        }
+        .wrap div:nth-child(5){
+            background: url(img/saga4.jpg) 0 0 no-repeat;
+            transform: rotateY(204deg) translateZ(300px);
+        }
+        .wrap div:nth-child(6){
+            background: url(img/saga5.jpg) 0 0 no-repeat;
+            transform: rotateY(255deg) translateZ(300px);
+        }
+        .wrap div:nth-child(7){
+            background: url(img/saga6.jpg) 0 0 no-repeat;
+            transform: rotateY(306deg) translateZ(300px);
+        }
+
+        @keyframes move{
+            from{transform:rotateX(-10deg) rotateY(0deg);}
+            to{transform:rotateX(-10deg) rotateY(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

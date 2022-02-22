@@ -1,0 +1,53 @@
+/* mp-halfScreenDialog style overrides*/
+.half-screen-dialog {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.half-screen-dialog .weui-half-screen-dialog__hd {
+  height: 105px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.half-screen-dialog .weui-half-screen-dialog__hd__side {
+  left: 32px;
+}
+
+.half-screen-dialog .weui-icon-btn_close {
+  width: 32px;
+  height: 32px;
+  color: rgba(0, 0, 0, .5);
+}
+
+.half-screen-dialog .weui-half-screen-dialog__title {
+  color: rgba(0, 0, 0, .9);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.half-screen-dialog .weui-half-screen-dialog__bd {
+  padding: 32px;
+}
+
+.half-screen-dialog .weui-half-screen-dialog__ft {
+  padding: 0 32px 64px;
+}
+
+.half-screen-dialog--no-vertical-padding .weui-half-screen-dialog__bd {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.half-screen-dialog--no-horizontal-padding .weui-half-screen-dialog__bd {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.half-screen-dialog--no-padding .weui-half-screen-dialog__bd {
+  padding: 0;
+}
+
+.half-screen-dialog--no-ft .weui-half-screen-dialog__ft {
+  display: none;
+}

@@ -1,0 +1,31 @@
+/* checkbox group style overrides for slideup panel usage */
+.checkbox-panel label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.checkbox-panel label:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.checkbox-panel text {
+  color: rgba(0, 0, 0, .9);
+  font-size: 32px;
+  line-height: 32px;
+}
+
+checkbox .wx-checkbox-input {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  color: #0A66C2;
+  background-color: #DCE6F1;
+}
